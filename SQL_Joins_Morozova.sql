@@ -35,7 +35,7 @@ INNER JOIN products ON order_details.product_id = products.product_id
 
 SELECT order_date, product_name, country, unit_price, quantity, discount
 FROM orders
-INNER JOUN order_details USING(order_id)
+INNER JOIN order_details USING(order_id)
 INNER JOIN products USING(product_id)
 
 -- 5. Из таблиц products и categories сгруппировать товар по категориям, посчитать сумму в денежном эквиваленте
