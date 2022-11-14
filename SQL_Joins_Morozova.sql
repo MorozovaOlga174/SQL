@@ -30,7 +30,7 @@ INNER JOIN employees ON orders.employee_id = employees.emploee_id
 
 SELECT order_date, product_name, country, unit_price, quantity, discount
 FROM orders
-INNER JOUN order_details ON orders.order_id = order_details.order_id
+INNER JOIN order_details ON orders.order_id = order_details.order_id
 INNER JOIN products ON order_details.product_id = products.product_id
 
 SELECT order_date, product_name, country, unit_price, quantity, discount
